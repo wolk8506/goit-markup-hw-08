@@ -11,6 +11,7 @@ footer {
 .section-footer {
   @media screen and (min-width: 1200px) {
     display: flex;
+    align-items: baseline;
   }
 }
 address {
@@ -22,14 +23,18 @@ address {
 
   color: var(--background-color);
 }
+
 .tablet-section {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-bottom: 60px;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: baseline;
   }
   @media screen and (min-width: 1200px) {
-    margin-bottom: 0;
+    align-items: baseline;
   }
 }
 .footer-title {
@@ -48,7 +53,6 @@ address {
 .blok-adress {
   text-align: center;
   @media screen and (min-width: 768px) {
-    margin-right: 165px;
     margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
@@ -87,16 +91,11 @@ address {
 }
 .blok-join {
   @media screen and (min-width: 768px) {
-    padding-top: 5px;
-    margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
-    padding-top: 12px;
-    margin-bottom: 0;
   }
   padding-top: 0;
-  margin-bottom: 60px;
 
   &__link {
     fill: var(--background-color);
@@ -119,9 +118,6 @@ address {
 }
 /*  */
 .blok-subscribe {
-  @media screen and (min-width: 1200px) {
-    padding-top: 12px;
-  }
   &__field {
     @media screen and (min-width: 1200px) {
       display: flex;
